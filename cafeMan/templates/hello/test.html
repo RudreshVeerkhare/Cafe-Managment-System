@@ -1,0 +1,7 @@
+<html>
+    <p>Invoice for {{ user }}</p>
+    {% for dish in items_ordered %}
+    <p>{{ dish.name }} = {{ dish.quantity }}*{{ dish.price }}Rs</p>
+    {% endfor %}
+    <p>Total : {{ total }}Rs</p>
+</html>
